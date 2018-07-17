@@ -75,14 +75,8 @@ class DatabaseSeeder extends Seeder
         
         User::truncate();
         $user = new User;
-        $user->name = 'Iván';
-        $user->email = 'ivanbenavides85@gmail.com';
-        $user->password = bcrypt('123456');
-        $user->save();
-
-        $user = new User;
-        $user->name = 'Luis';
-        $user->email = 'direccion@culturaasiatica.com';
+        $user->name = 'Admin';
+        $user->email = 'admin@admin.test';
         $user->password = bcrypt('123456');
         $user->save();
 
