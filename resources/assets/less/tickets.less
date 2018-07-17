@@ -1,0 +1,52 @@
+#tickets {
+    h1 {
+        color: @color-main;
+        margin-bottom: 25px;
+    }
+    section {
+        padding: 4vw 0;
+        &.tickets-list {
+            text-align: center;
+            .ticket {
+                color: white;
+                padding: 30px 25px;
+                background: @color-main;
+                height: 100%;
+                position: relative;
+                h2 {
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+                .price {
+                    font-size: 70px;
+                    font-weight: 300;
+                    color: @color-content;
+                    span {
+                        color: @color-second;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                footer {
+                    padding-top: 20px;
+                }
+                &.sold-out {
+                    .overlay {
+                        background: fade(@color-main, 70%);
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                    }
+                }
+            }
+            h4 {
+                color: @color-main;
+                font-size: 25px;
+                padding-top: 30px;
+            }
+        }
+    }
+}

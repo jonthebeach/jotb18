@@ -1,0 +1,108 @@
+section.companies {
+    padding: 40px 0;
+    background: linear-gradient(@color-main, @color-content);
+    text-align: center;
+    @media @desktop {
+        text-align: left;
+    }
+    /* Invert for white background pages */
+    &.invert {
+        .group {
+            .item {
+                a {
+                    img {
+                        filter: none
+                    }
+                    @media @desktop {
+                        border-right: none;
+                        padding-right: 0;
+                        &:hover {
+                            img {
+                                filter: grayscale(100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h2,
+    h3 {
+        color: @color-content;
+    }
+    /* Group specific styles*/
+    .group {
+        padding: 15px;
+        background: fade(@color-main, 20%);
+        min-height: 193px;
+        h3 {
+            font-weight: 200;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        &.collaborators{
+            min-height: auto;
+            div{
+                text-align: center;
+                padding: 0 15%;
+            }
+            a{
+                color: #fff;
+                border-right: 1px solid;
+                display: inline-block;
+                margin: 10px 0;
+                padding: 0 15px;
+                &:first-child{
+                    padding-left: 0;
+                }
+            }
+        }
+        .item {
+            height: calc(~"100% - 10px");
+            position: relative;
+            display: flex;
+            text-align: center;
+            padding-bottom: 10px;
+            a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                @media @desktop {
+                    text-align: left;
+                }
+                img {
+                    filter: brightness(0) invert(1);
+                }
+                &:hover {
+                    img {
+                        filter: none;
+                    }
+                }
+            }
+        }
+        @media @desktop {
+            .row{
+                .col-lg-6:nth-child(2n + 1){
+                    .item{
+                        a{
+                            border-right: 1px solid @color-content;
+                        }
+                    }
+                }
+            }
+            .item {
+                a {
+                    text-align: center;
+                    padding-right: 5px;
+                }
+            } 
+            .row {
+                [class*='col-']:last-child {
+                    a {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

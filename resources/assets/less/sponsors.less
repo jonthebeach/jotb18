@@ -1,0 +1,147 @@
+#spon-sors-page {
+    section {
+        padding: 4vw 0;
+        &.headerimage {
+            background: url('/images/headers/header_spon_sors.png') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &.packs {
+            h2 {
+                text-align: center;
+                color: @color-content;
+            }
+            .table {
+                overflow-x: auto;
+                @media @desktop {
+                    overflow-x: hidden;
+                }
+                table {
+                    margin: 40px 0;
+                    color: @color-main;
+                    @media @desktop {
+                        display: block;
+                    }
+                    thead {
+                        th {
+                            border-top: none;
+                            padding: 10px;
+                            font-weight: 300;
+                            font-size: 35px;
+                            text-align: center;
+                            max-width: 200px;
+                            &:nth-child(2) {
+                                background: #0095bf;
+                            }
+                            &:nth-child(3) {
+                                background: #ffde03;
+                            }
+                            &:nth-child(4) {
+                                background: #2d2767;
+                                color: white;
+                            }
+                            &:nth-child(5) {
+                                background: #de626a;
+                                color: white;
+                            }
+                            &:nth-child(6) {
+                                background: #5db466;
+                                color: white;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                border-top: none;
+                                padding: 5px;
+                                vertical-align: middle;
+                                span {
+                                    display: block;
+                                    width: 100%;
+                                    background-size: contain;
+                                    &.true {
+                                        background: url('/images/spons/true_table.png') no-repeat;
+                                        background-position: center;
+                                        height: 19px;
+                                    }
+                                    &.false {
+                                        background: url('/images/spons/false_table.png') no-repeat;
+                                        background-position: center;
+                                        height: 19px;
+                                    }
+                                }
+                                &:not(:first-child) {
+                                    text-align: center;
+                                }
+                                @media @large-desktop {
+                                    &:first-child {
+                                        min-width: 372px;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            &.main {
+                                background: #bbe1ec;
+                                td {
+                                    border-bottom: 1px solid white;
+                                    &:first-child {
+                                        font-weight: 700;
+                                        font-size: larger;
+                                    }
+                                    .false {
+                                        background: none;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(2n+1):not(.main) {
+                                background: fade(@color-content, 15);
+                            }
+                        }
+                    }
+                    tfoot {
+                        font-size: 10px;
+                        td {
+                            padding: 20px 0 0 0;
+                        }
+                    }
+                }
+            }
+            .other-pack {
+                background: fade(@color-content, 15);
+                height: 100%;
+                header {
+                    padding: 15px;
+                    color: white;
+                    background: @color-main;
+                    h3 {
+                        margin-bottom: 5px;
+                        font-size: 20px;
+                        text-align: center;
+                        @media @desktop{
+                            text-align: left;
+                        }
+                    }
+                    p {
+                        &.price {
+                            float: left;
+                            font-weight: 200;
+                            font-size: 24px;
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                        &.max {
+                            float: right;
+                            color: @color-content;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                article {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}

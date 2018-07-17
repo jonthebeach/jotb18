@@ -1,0 +1,208 @@
+section.speakers {
+    header {
+        margin-bottom: 40px;
+        text-align: center;
+        color: @color-content;
+        p {
+            font-size: 20px;
+        }
+    }
+    article {
+        .speaker {
+            padding-bottom: 30px;
+            text-align: center;
+            @media @desktop {
+                text-align: left;
+            }
+            figure {
+                position: relative;
+                .twitter-link {
+                    width: 50%;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 1;
+                    text-align: right;
+                    img {
+                        &.twitter {
+                            display: inline-block;
+                        }
+                        &.twitter_hover {
+                            display: none;
+                        }
+                    }
+                    &:hover {
+                        img {
+                            &.twitter {
+                                display: none;
+                            }
+                            &.twitter_hover {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+                .speaker-img {
+                    position: relative;
+                    display: block;
+                    img {
+                        width: 100%;
+                        border-bottom: 10px solid @color-content;
+                    }
+                    .overlay {
+                        display: none;
+                    }
+                    @media @desktop {
+                        &:hover {
+                            .overlay {
+                                display: block;
+                                position: absolute;
+                                background: fade(@color-content, 50%);
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                p {
+                                    color: white;
+                                    margin: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            footer {
+                color: @color-main;
+                padding-top: 20px;
+                .name {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                .position {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* Fancybox */
+.fancybox-overlay {
+    background: fade(@color-main, 90%) !important;
+    z-index: 9999 !important;
+}
+
+.fancybox-wrap{
+    z-index: 99999 !important;
+    &.speakers {
+        margin: auto !important;
+        z-index: 10000 !important;
+        top: 100px !important;
+        position: absolute !important;
+        @media @desktop {
+            width: auto !important;
+        }
+        .fancybox-skin {
+            background: transparent;
+            box-shadow: none !important;
+        }
+        .fancybox-inner {
+            width: auto !important;
+            overflow: visible !important;
+            height: 100% !important;
+        }
+        .fancybox-close {
+            background: url("/images/close-button.png") no-repeat;
+            top: -18px;
+            right: 9px;
+        }
+        .popup {
+            background: rgba(18, 26, 58, 0.97);
+            text-align: center;
+            @media @desktop {
+                text-align: left;
+            }
+            .figure-container {
+                width: 50%;
+                margin: auto;
+                @media @desktop {
+                    position: absolute;
+                    width: 100%;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                figure {
+                    background-position: center;
+                    width: 100%;
+                    padding-bottom: 100%;
+                    border-radius: 100%;
+                }
+            }
+            .info {
+                color: white;
+                @media @desktop {
+                    min-width: 324px;
+                    min-height: 400px;
+                }
+                .twitter-link {
+                    display: block;
+                    padding-bottom: 10px;
+                    color: @color-forth;
+                    &:hover {
+                        color: @color-five;
+                    }
+                }
+                h3 {
+                    padding-bottom: 10px;
+                }
+                .position {
+                    padding-bottom: 10px;
+                }
+                .description {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .talk {
+                color: white;
+                padding: 25px;
+                position: relative;
+                .meta {
+                    h3 {
+                        display: inline-block;
+                    }
+                    .level-topic {
+                        text-align: center;
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        .topic {
+                            font-size: 50px;
+                        }
+                        .level {
+                            position: absolute;
+                            bottom: 50%;
+                            display: inline;
+                            left: 0;
+                            right: 0;
+                            display: block;
+                            text-transform: uppercase;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                    }
+                    .time {
+                        display: inline-block;
+                        vertical-align: baseline;
+                    }
+                }
+                .title {
+                    padding: 10px 0;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

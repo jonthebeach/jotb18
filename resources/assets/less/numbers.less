@@ -1,0 +1,24 @@
+section.numbers {
+    background: @color-main;
+    padding: 65px 0;
+    .item {
+        text-align: center;
+        margin-bottom: 25px;
+        @media @desktop {
+            margin-bottom: 0;
+        }
+        figure {
+            img {
+                max-width: 100%;
+            }
+        }
+        footer {
+            color: @color-content;
+            font-size: 25px;
+            padding-top: 20px;
+            span {
+                color: @color-second;
+            }
+        }
+    }
+}

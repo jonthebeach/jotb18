@@ -1,0 +1,123 @@
+{
+    "header": ["", "Platinum €10,000", "Gold €6,5000", "Silver €3,500", "Bronze €1,500", "Hackathon €5,000"],
+    "table": [
+        [{
+            "columns": ["Limit", "Max. 1", "Max. 5", "Max. 5", "no limits", "Max. 1"],
+            "class": "main"
+        }],
+        [{
+                "columns": ["Booth area", "", "", "", "", ""],
+                "class": "main"
+            },
+            {
+                "columns": ["Size", "4x2", "3x2", "2x2", "Roll-up", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Private meeting room for up to 20 people ", "true", "", "", "", ""],
+                "class": ""
+            }
+        ],
+        [{
+                "columns": ["Tickets", "", "", "", "", ""],
+                "class": "main"
+            },
+            {
+                "columns": ["Limited passes for booth staff", "3", "2", "1", "", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Free conference tickets*", "7", "5", "3", "1", "4"],
+                "class": ""
+            },
+            {
+                "columns": ["Discount on additional conference tickets**", "30%", "20%", "15%", "10%", ""],
+                "class": ""
+            }
+        ],
+        [{
+                "columns": ["Brand Visibility", "", "", "", "", ""],
+                "class": "main"
+            },
+            {
+                "columns": ["Logo on conference site", "true", "true", "true", "true", "true"],
+                "class": ""
+            },
+            {
+                "columns": ["Your own dedicated partner page", "true", "true", "true", "true", "true"],
+                "class": ""
+            },
+            {
+                "columns": ["Logo in afterconf video", "true", "true", "true", "true", "true"],
+                "class": ""
+            },
+            {
+                "columns": ["Logo on info screens", "true", "true", "true", "true", "true"],
+                "class": ""
+            },
+            {
+                "columns": ["Useful swag in welcome bag", "true", "true", "true", "", "true"],
+                "class": ""
+            },
+            {
+                "columns": ["Logo on all in venue banners", "true", "true", "true", "", "true"],
+                "class": ""
+            },
+            {
+                "columns": ["Logo on the photo-wall", "true", "true", "", "", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Logo on badge", "true", "", "", "", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Possibility to give a non commercial presentation or workshop", "true", "", "", "", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Possibility to give a non commercial presentation", "", "true", "", "", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Video interview on-site", "true", "", "", "", ""],
+                "class": ""
+            }
+        ],
+        [{
+                "columns": ["Social media & Mail beneﬁts", "", "", "", "", ""],
+                "class": "main"
+            },
+            {
+                "columns": ["Nº of tweets and FB posts", "3", "2", "1", "1", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Message in pre-event mail", "true", "", "", "", "true"],
+                "class": ""
+            },
+            {
+                "columns": ["Message in post-event mail", "true", "true", "", "", "true"],
+                "class": ""
+            }
+        ],
+        [{
+                "columns": ["Recruiting", "", "", "", "", ""],
+                "class": "main"
+            },
+            {
+                "columns": ["Publish job offers on the website", "5", "3", "2", "1", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Announcement about special attraction at the event", "true", "true", "", "", ""],
+                "class": ""
+            },
+            {
+                "columns": ["Job offer featured in our newsletter", "2", "1", "", "", ""],
+                "class": ""
+            }
+        ]
+
+    ]
+}

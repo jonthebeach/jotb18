@@ -1,0 +1,36 @@
+#contact {
+    section {
+        padding: 40px 0;
+        &.form {
+            @media @desktop {
+                padding: 100px 0;
+            }
+            form {
+                margin: 20px 0;
+                label {
+                    padding: 10px 0;
+                    color: @color-main;
+                }
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    width: 100%;
+                    padding: 5px;
+                    background: @color-main;
+                    box-sizing: border-box;
+                    border: none;
+                    color: @color-content;
+                }
+                input[type="submit"] {
+                    width: 100%;
+                    padding: 10px 15px;
+                    @media @desktop {
+                        width: auto;
+                        padding: 10px 100px;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

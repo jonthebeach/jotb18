@@ -1,0 +1,19 @@
+[{
+        "title": "Educate",
+        "imagePath": "/images/about/educate.png",
+        "description": "To educate and raise the calibre of IT developers in the area"
+    }, {
+        "title": "Provide environment for developers",
+        "imagePath": "/images/about/provide.png",
+        "description": "To provide an environment for developers to share experiences and grow in their careers"
+    }, {
+        "title": "Developments in the south of Spain",
+        "imagePath": "/images/about/spain.png",
+        "description": "To make the rest of the world aware of the interesting developments taking place in the South of Spain"
+    },
+    {
+        "title": "Women leadership",
+        "imagePath": "/images/about/women.png",
+        "description": "To empower women to take the lead in tech events"
+    }
+]

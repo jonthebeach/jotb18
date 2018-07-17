@@ -1,0 +1,57 @@
+section.main-topics {
+    padding: 0 !important;
+    background: @color-main;
+    color: @color-content;
+    text-align: center;
+    @media @desktop {
+        text-align: left
+    }
+    .right {
+        background: url(/images/home/topics.png) no-repeat;
+        background-size: cover;
+        background-position: left;
+        width: 100%;
+        min-height: 300px;
+        @media @desktop {
+            background-size: cover;
+            background-position: right;
+            height: 100%;
+        }
+    }
+    .content {
+        .inner {
+            margin: 0 0 0 15px;
+            padding: 30px 15px;
+            ul {
+                margin: 0;
+                li {
+                    list-style: none;
+                    padding: 5px 0;
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+        @media @desktop {
+            width: 100%;
+            height: 100%;
+            .inner {
+                ul {
+                    padding: 30px 0 0 20px;
+                    li {
+                        font-weight: 300;
+                        @iterations: 6;
+                        .mixin-loop (@i) when (@i >0) {
+                            &:nth-child(@{i}) {
+                                padding-left: unit(@i * 10, px);
+                            }
+                            .mixin-loop(@i - 1);
+                        }
+                        .mixin-loop(@iterations);
+                    }
+                }
+            }
+        }
+    }
+}

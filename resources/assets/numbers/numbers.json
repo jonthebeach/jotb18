@@ -1,0 +1,19 @@
+[{
+        "title": "HACKATHON",
+        "quantity": "1",
+        "imagePath": "/images/home/hackathon.png"
+    }, {
+        "title": "WORKSHOPS",
+        "quantity": "6",
+        "imagePath": "/images/home/workshops.png"
+    }, {
+        "title": "SPEAKERS",
+        "quantity": "40+",
+        "imagePath": "/images/home/speakers.png"
+    },
+    {
+        "title": "ATTENDEES",
+        "quantity": "400",
+        "imagePath": "/images/home/attendees.png"
+    }
+]

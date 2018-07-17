@@ -1,0 +1,56 @@
+[{
+        "title": "Event",
+        "url": "",
+        "children": [{
+                "title": "About",
+                "url": "about"
+            },
+            {
+                "title": "Workshops",
+                "url": "workshops"
+            },
+            {
+                "title": "Hackathon",
+                "url": "hackathon"
+            },
+            {
+                "title": "Sponsors",
+                "url": "sponsors"
+            },
+            {
+                "title": "Jobs",
+                "url": "jobs"
+            },
+            {
+                "title": "Blog",
+                "url": "blog"
+            },
+            {
+                "title": "JOTB16",
+                "url": "https://2016.jonthebeach.com",
+                "external": true
+            },
+            {
+                "title": "JOTB17",
+                "url": "https://2017.jonthebeach.com",
+                "external": true
+            }
+        ]
+    },
+    {
+        "title": "Pictures",
+        "url": "pictures"
+    },
+    {
+        "title": "Videos",
+        "url": "videos"
+    },
+    {
+        "title": "Speakers",
+        "url": "speakers"
+    },
+    {
+        "title": "Contact",
+        "url": "contact"
+    }
+]

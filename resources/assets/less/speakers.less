@@ -1,0 +1,71 @@
+#speakers {
+    section {
+        padding: 4vw 0;
+        &.speakers-list {
+            .header-list {
+                color: @color-content;
+                text-align: center;
+                margin-bottom: 40px;
+                p {
+                    font-size: 25px;
+                }
+            }
+            a {
+                display: block;
+                border: 2px solid transparent;
+                height: 100%;
+                .speaker {
+                    text-align: center;
+                    background: @color-content;
+                    height: 100%;
+                    .row {
+                        height: 100%;
+                    }
+                    @media @phone {
+                        text-align: left;
+                        min-height: 250px;
+                    }
+                    .styled-content {
+                        color: @color-main;
+                        padding: 15px;
+                        header {
+                            @media @desktop {
+                                text-align: left;
+                            }
+                            padding-bottom: 10px;
+                            h2 {
+                                font-size: 25px;
+                                font-weight: bold;
+                                margin-bottom: 0;
+                            }
+                            .twitter-link {
+                                font-weight: 500;
+                                display: block;
+                                color: white;
+                                padding-bottom: 10px;
+                            }
+                            .position {
+                                font-weight: bold;
+                            }
+                        }
+                        article {
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 5;
+                        }
+                        .talk-title {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                &:hover {
+                    text-decoration: none;
+                    @media @desktop {
+                        border: 2px solid @color-content;
+                    }
+                }
+            }
+        }
+    }
+}

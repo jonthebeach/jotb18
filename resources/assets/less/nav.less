@@ -1,0 +1,169 @@
+header#main {
+  background: @color-main;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  .main-logo {
+    display: block;
+    padding: 3px 0;
+  }
+  nav#main {
+    .navbar-collapse {
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      top: 63px;
+      left: 0;
+      @media @desktop {
+        position: inherit;
+        top: 0;
+      }
+      &>ul {
+        &>li {
+          text-align: center;
+          background: white;
+          &>a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px dashed @color-main;
+          }
+          &.active {
+            background: @color-content;
+            &>a {
+              color: white;
+            }
+          }
+          &.children {
+            @triangle: 12px;
+            &>a {
+              position: relative;
+              .caret {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
+                margin-left: @triangle;
+                vertical-align: middle;
+                content: "";
+                border-top: @triangle solid;
+                border-right: @triangle solid transparent;
+                border-left: @triangle solid transparent;
+              }
+            }
+            &.open {
+              &>a {
+                .caret {
+                  border-top: 0 solid;
+                  border-bottom: @triangle solid;
+                  border-right: @triangle solid transparent;
+                  border-left: @triangle solid transparent;
+                }
+              }
+            }
+            &>ul {
+              display: none;
+            }
+          }
+          &>ul {
+            background: @color-third;
+            &>li {
+              padding: 10px 0;
+              border-bottom: 1px dashed @color-content;
+              &>a {
+                color: @color-content;
+              }
+              &.active {
+                a {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .buy {
+      a {
+        width: 100%;
+        @media @desktop {
+          width: auto;
+        }
+      }
+    }
+    @media @desktop {
+      .navbar-collapse {
+        position: inherit;
+        top: 0;
+        &>ul {
+          padding: 0;
+          &>li {
+            position: relative;
+            background: transparent;
+            list-style: none;
+            display: inline-block;
+            &>a {
+              color: white;
+              font-size: 16px;
+              border-bottom: 5px solid;
+              border-bottom-color: transparent;
+              padding: 0 19px 3px;
+              .caret {
+                display: none
+              }
+            }
+            &>ul {
+              display: none;
+            }
+            &:last-child {
+              padding-right: 20px;
+            }
+            &:hover {
+              ul {
+                display: block;
+              }
+            }
+            &:hover,
+            &.active {
+              background: transparent;
+              &>a {
+                color: @color-content;
+                border-bottom-color: @color-content;
+                text-decoration: none;
+              }
+              &>ul {
+                position: absolute;
+                z-index: 10;
+                top: 100%;
+                background: @color-content;
+                &>li {
+                  display: block;
+                  padding: 15px;
+                  border-bottom: 1px dashed @color-main;
+                  &>a {
+                    color: white;
+                  }
+                  &:hover,
+                  &.active {
+                    background: @color-third;
+                    a {
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }              
+            }
+            &.children {
+              a {
+                .caret {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

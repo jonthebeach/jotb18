@@ -1,0 +1,98 @@
+@circle: 30px;
+@separation-line: 40px;
+#talks-overview{
+    background: url('/images/talks-overview/talks-overview-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    .content {
+        margin: auto;
+        width: 90%;
+        &>header{
+            padding: 20px 0;
+            .clock{
+                padding-left: 30px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+        .hall{
+            position: relative;
+            header{
+                padding: 10px 0;
+                background: @color-content;
+                color: @color-main;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 3px;
+                max-height: 42px;
+                @media @large-desktop{
+                    max-height: 59px;
+                }
+                h2{
+                    margin: 0;
+                    padding: 0 5px;
+                    font-size: 25px;
+                    @media @large-desktop{
+                        font-size: 38px;
+                    }
+                }
+            }
+            .subheader{
+                padding: 10px 0;
+                text-align: center;
+                background: @color-main;
+                color: @color-content;
+                font-size: 25px;
+            }
+            section{
+                position: relative;
+                overflow: hidden;
+                height: 31vh;
+                padding: 20px 0;
+                background: fade(#fff, 75%);
+                color: @color-main;
+                .time{
+                    display: block;
+                    padding-top: 5px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    padding-right: @separation-line;
+                    text-align: right
+                }
+                .info{
+                    position: relative;
+                    border-left: 2px solid @color-content;
+                    padding-left: @separation-line;
+                    padding-bottom: 30px;
+                    &::before{
+                        content: ' ';
+                        position: absolute;
+                        display: block;
+                        background: @color-content;
+                        width: @circle;
+                        height: @circle;
+                        border-radius: 100%;
+                        left: -(@circle/2);
+                        top: 5px;
+                    }
+                    .speakers{
+                        .speaker{
+                            font-size: 25px;
+                            font-weight: bold;
+                            text-transform: capitalize;
+                        }
+                    }
+                    .talk{
+                        font-size: 18px;
+                    }
+                }
+
+                #twitter-results{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

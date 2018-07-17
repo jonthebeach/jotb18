@@ -1,0 +1,36 @@
+.item.workshop {
+    color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: @color-main;
+    @media @phone {
+        height: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        footer {
+            margin-top: auto;
+        }
+    }
+    h3 {
+        font-weight: 400;
+        line-height: 1.3;
+    }
+    hr {
+        width: 100%;
+        border-bottom-color: @color-content;
+    }
+    div.line {
+        margin-bottom: 5px;
+        span.label {
+            color: @color-content;
+        }
+        p {
+            display: inline-block;
+        }
+    }
+    div.styled-content {
+        font-weight: 200;
+    }
+}

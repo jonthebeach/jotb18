@@ -1,0 +1,346 @@
+// main: style.less, sourcemap: true, compress: false
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+}
+
+.border(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+  border-top: @top;
+  border-right: @right;
+  border-bottom: @bottom;
+  border-left: @left;
+}
+
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.border-radiuses (@topright: 0, @bottomleft: 0, @bottomright: 0, @topleft: 0) {
+  -webkit-border-top-right-radius: @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius: @bottomleft;
+  -webkit-border-top-left-radius: @topleft;
+  -moz-border-radius-topright: @topright;
+  -moz-border-radius-bottomright: @bottomright;
+  -moz-border-radius-bottomleft: @bottomleft;
+  -moz-border-radius-topleft: @topleft;
+  border-top-right-radius: @topright;
+  border-bottom-right-radius: @bottomright;
+  border-bottom-left-radius: @bottomleft;
+  border-top-left-radius: @topleft;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow: @string;
+  box-shadow: @string;
+}
+
+.placeholder(@rules) {
+  &::-webkit-input-placeholder {
+    @rules();
+  }
+  &:-moz-placeholder {
+    @rules();
+  }
+  &::-moz-placeholder {
+    @rules();
+  }
+  &:-ms-input-placeholder {
+    @rules();
+  }
+}
+
+.autofill(@rules) {
+  &:-webkit-autofill {
+    @rules();
+  }
+  &:-webkit-autofill:hover {
+    @rules();
+  }
+  &:-webkit-autofill:focus {
+    @rules();
+  }
+}
+
+.opacity (@opacity: 0.5) {
+  @ieOpacity: @opacity * 100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})";
+  filter:~"alpha(opacity=@{ieOpacity})";
+  opacity: @opacity;
+}
+
+.rotate (@deg) {
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+}
+
+.scale (@deg) {
+  -webkit-transform: scale(@deg);
+  -moz-transform: scale(@deg);
+  -ms-transform: scale(@deg);
+  -o-transform: scale(@deg);
+}
+
+.transform (@transform) {
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+  -ms-transform: @transform;
+  -o-transform: @transform;
+}
+
+.word-break() {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.background-size(@size) {
+  -webkit-background-size: @size;
+  -moz-background-size: @size;
+  -o-background-size: @size;
+  background-size: @size;
+}
+
+.appearance (@value) {
+  -webkit-appearance: (@value);
+  -moz-appearance: (@value);
+  appearance: (@value);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+  -webkit-animation: @name @duration @delay @ease;
+  -moz-animation: @name @duration @delay @ease;
+  -ms-animation: @name @duration @delay @ease;
+}
+
+.grayscale(@perc: 100%) {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(@perc);
+  -moz-filter: grayscale(@perc);
+  -o-filter: grayscale(@perc);
+  -ms-filter: grayscale(@perc);
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.code-title(@color,
+@bg-color,
+@font-size: 30px) {
+  .code-title {
+    position: relative;
+    text-align: left;
+    border-bottom: 1px dashed @color;
+    margin-bottom: 20px;
+    font-size: @font-size;
+    @media @phone {
+      border: none;
+    }
+    div {
+      position: relative;
+      top: @font-size - 10px;
+      h1 {
+        display: inline;
+        font-weight: 200;
+        padding-bottom: 20px;
+        font-size: 30px;
+        color: white;
+        margin-left: 20px;
+        padding: 0 10px;
+      }
+      span {
+        background: @bg-color;
+        color: @color;
+        padding: 0 10px;
+        margin-left: 20px;
+        @media @phone {
+          padding: 0;
+          margin: 0;
+        }
+        &:first-child {
+          margin: 0;
+          padding: 0 5px 0 0;
+          @media @phone {
+            display: none;
+          }
+        }
+        &:last-child {
+          margin: 0;
+          padding: 0 10px; //padding: 0 0 0 5px;
+          @media @phone {
+            display: none;
+          }
+        }
+      }
+    }
+    figure {
+      position: absolute;
+      top: -8px;
+      right: 15%;
+      background: @bg-color;
+      padding: 0 5px;
+      @media @tablet {
+        right: 5%;
+      }
+      @media @phone {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Flexbox LESS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+// Flexbox display
+// flex or inline-flex
+.flex-display(@display: flex) {
+  display:~"-webkit-@{display}";
+  display:~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+  display:~"-ms-@{display}"; // IE11
+  display: @display;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+.flex(@columns: initial) {
+  -webkit-flex: @columns;
+  -ms-flex: @columns;
+  flex: @columns;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+.flex-direction(@direction: row) {
+  -webkit-flex-direction: @direction;
+  -ms-flex-direction: @direction;
+  flex-direction: @direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+.flex-wrap(@wrap: nowrap) {
+  -webkit-flex-wrap: @wrap;
+  -ms-flex-wrap: @wrap;
+  flex-wrap: @wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+.flex-flow(@flow) {
+  -webkit-flex-flow: @flow;
+  -ms-flex-flow: @flow;
+  flex-flow: @flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+.flex-order(@order: 0) {
+  -webkit-order: @order;
+  -ms-order: @order;
+  order: @order;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+.flex-grow(@grow: 0) {
+  -webkit-flex-grow: @grow;
+  -ms-flex-grow: @grow;
+  flex-grow: @grow;
+}
+
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number>
+.flex-shrink(@shrink: 1) {
+  -webkit-flex-shrink: @shrink;
+  -ms-flex-shrink: @shrink;
+  flex-shrink: @shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width>
+.flex-basis(@width: auto) {
+  -webkit-flex-basis: @width;
+  -ms-flex-basis: @width;
+  flex-basis: @width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+.justify-content(@justify: flex-start) {
+  -webkit-justify-content: @justify;
+  -ms-justify-content: @justify;
+  justify-content: @justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+.align-content(@align: stretch) {
+  -webkit-align-content: @align;
+  -ms-align-content: @align;
+  align-content: @align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+.align-items(@align: stretch) {
+  -webkit-align-items: @align;
+  -ms-align-items: @align;
+  align-items: @align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch
+.align-self(@align: auto) {
+  -webkit-align-self: @align;
+  -ms-align-self: @align;
+  align-self: @align;
+}

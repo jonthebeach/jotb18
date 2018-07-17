@@ -1,0 +1,209 @@
+#schedule {
+  padding: 4vw 0;
+  h1 {
+    text-align: center;
+    color: @color-main;
+  }
+  .hall {
+    text-align: center;
+    padding: 15px 0;
+    color: @color-main;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .table {
+    .time {
+      text-align: center;
+      margin: 30px 0 10px 0;
+      @media @desktop {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+      }
+    }
+    .talk {
+      padding: 15px;
+      position: relative;
+      background: lighten(@color-sixth, 8%);
+      height: 100%;
+      color: @color-main;
+      text-align: center;
+      @media @desktop {
+        text-align: left;
+      }
+      h3 {
+        padding-bottom: 10px;
+        word-wrap: break-word;
+        text-transform: capitalize;
+      }
+      h4 {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .talk-hall {
+        font-weight: 300;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+      }
+      .speaker {
+        color: @color-main;
+        padding-bottom: 3px;
+        display: block;
+        &:last-child {
+          padding-bottom: 10px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        figure {
+          padding-bottom: 50%;
+          width: 50%;
+          border-radius: 100%;
+          margin: auto;
+          margin-bottom: 15px;
+          @media @desktop {
+            width: 100%;
+            padding-bottom: 100%;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .level-topic {
+        text-align: center;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        display: flex;
+        .topic {
+          font-size: 50px;
+        }
+        .level {
+          position: absolute;
+          bottom: 50%;
+          display: inline;
+          left: 0;
+          right: 0;
+          display: block;
+          text-transform: uppercase;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      img {
+        border-radius: 100%;
+      }
+      &.break {
+        padding: 7.5px 0;
+        background: darken(@color-sixth, 15%);
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 19px;
+      }
+      &.empty {
+        text-align: center;
+        @media @desktop {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      &.keynote {
+        background: repeating-linear-gradient(
+          135deg,
+          darken(@color-sixth, 15%),
+          darken(@color-sixth, 15%) 10px,
+          transparent 10px,
+          transparent 20px
+        );
+      }
+    }
+    &.workshops {
+      .talk {
+        a {
+          color: @color-main;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        &:hover {
+          background: @color-content;
+        }
+      }
+      .workshop-talk {
+        background: darken(@color-sixth, 15%);
+        text-align: center;
+        padding: 10px 0;
+        height: 100%;
+        .workshop-time {
+          text-align: center;
+          color: white;
+          font-weight: bold;
+          font-size: 25px;
+          @media @desktop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+          }
+        }
+        &.empty {
+          background: repeating-linear-gradient(
+            135deg,
+            darken(@color-sixth, 15%),
+            darken(@color-sixth, 15%) 10px,
+            transparent 10px,
+            transparent 20px
+          );
+        }
+      }
+    }
+  }
+  .topics {
+    list-style: none;
+    margin: 0;
+    .topic {
+      vertical-align: middle;
+      text-transform: capitalize;
+      span {
+        font-size: 30px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .levels {
+    list-style: none;
+    margin: 0;
+    color: @color-main;
+    .level {
+      text-transform: capitalize;
+      text-align: right;
+      .whole-word {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .initial-letter {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        .icon {
+          font-size: 50px;
+        }
+        .first-letter {
+          position: absolute;
+          bottom: 50%;
+          text-align: center;
+          left: 0;
+          right: 0;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

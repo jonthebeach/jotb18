@@ -1,0 +1,123 @@
+#jobs {
+    section {
+        padding: 4vw 0;
+        &.headerimage {
+            background: url("/images/headers/header_jobs.png") no-repeat;
+            background-size: cover;
+        }
+        &.content {
+            padding: 5vw 0;
+            text-align: center;
+            h2 {
+                color: @color-content;
+                margin-bottom: 20px;
+            }
+            .main {
+                color: @color-main;
+                padding-bottom: 35px;
+                font-weight: 200;
+                font-size: 30px;
+            }
+            @media @desktop {
+                h2 {
+                    margin: 0 auto 20px;
+                }
+                .main {
+                    font-size: 62px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+#company-detail {
+    section {
+        padding: 4vw 0;
+        &.spon-sor {
+            padding: 4vw 0 0 0;
+            text-align: center;
+            @media @desktop {
+                text-align: left;
+            }
+            figure {
+                text-align: center;
+                margin-bottom: 30px;
+                &.black {
+                    filter: brightness(0%);
+                }
+                img {
+                    max-height: 200px;
+                }
+            }
+        }
+        &.jobs-list {
+            color: @color-content;
+            h2.title {
+                color: @color-content;
+                margin-bottom: 55px;
+                text-align: center;
+                @media @desktop {
+                    text-align: left;
+                }
+            }
+            ul.toggleable {
+                margin: 0;
+                &:first-child {
+                    header {
+                        border-top: 1px solid @color-content;
+                    }
+                }
+                & > li {
+                    list-style: none;
+                    @triangle: 12px;
+                    header {
+                        padding: 20px;
+                        border-bottom: 1px solid @color-content;
+                        background: transparent;
+                        position: relative;
+                        font-size: 25px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        img {
+                            max-height: 70px;
+                        }
+                        &::after {
+                            display: inline-block;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 20px;
+                            margin-left: @triangle;
+                            vertical-align: middle;
+                            content: "";
+                            border-top: @triangle solid;
+                            border-right: @triangle solid transparent;
+                            border-left: @triangle solid transparent;
+                        }
+                    }
+                    &.open {
+                        header {
+                            &::after {
+                                border-top: 0 solid;
+                                border-bottom: @triangle solid;
+                                border-right: @triangle solid transparent;
+                                border-left: @triangle solid transparent;
+                            }
+                        }
+                    }
+                    & > div.styled-content {
+                        display: none;
+                        padding: 25px;
+                        color: @color-main;
+                        background: fade(@color-content, 30);
+                        footer {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+[{
+        "id": "bird",
+        "title": "Early Bokeron",
+        "date": "Up to 1st February",
+        "price": 120,
+        "status": "disabled",
+        "button": "Sold out",
+        "soldOut": true,
+        "description": "Access to all the sessions and \"Canela\" workshops, breakfast and lunch included and closing party + beers"
+    },
+    {
+        "id": "tuna",
+        "title": "Standard Tuna",
+        "date": "Up to 31st March or until end of stock",
+        "price": 170,
+        "status": "disabled",
+        "button": "Sold out",
+        "soldOut": true,
+        "description": "Access to all the sessions and 50% off on \"Canela\" workshops, breakfast and lunch included and closing party + beers"
+    },
+    {
+        "id": "calamar",
+        "title": "Last Callamar",
+        "date": "Until end of stock",
+        "price": 220,
+        "status": "disabled",
+        "button": "Sold out",
+        "soldOut": true,
+        "description": "Access to all the sessions, breakfast and lunch included and closing party + beers"
+    }
+]

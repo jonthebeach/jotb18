@@ -1,0 +1,69 @@
+footer#main-footer {
+  color: white;
+  text-align: center;
+  @media @desktop {
+    text-align: left;
+  }
+  a {
+    color: white;
+  }
+  h3 {
+    color: @color-content;
+    padding-bottom: 15px;
+    a {
+      color: @color-content;
+    }
+  }
+  .first {
+    background: lighten(@color-main, 10);
+    padding: 40px 0;
+    .tweets {
+      .tweet {
+        padding: 5px 0;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    .get-in-touch {
+      padding-bottom: 25px;
+    }
+    .logo-footer {
+      padding-top: 20px;
+    }
+  }
+  .second {
+    background: @color-main;
+    padding: 20px 0;
+    .rrss {
+      a {
+        display: inline-block;
+        width: 43px;
+        height: 19px;
+        padding: 0 2.5px;
+        background: url('/images/rrss_sprite.png') no-repeat;
+        &:hover {
+          background-position-y: -19px;
+        }
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        @background-init-x: -43;
+        &.twitter {
+          background-position-x: unit(@background-init-x, px);
+        }
+        &.google {
+          background-position-x: unit(@background-init-x * 2, px);
+        }
+        &.facebook {
+          background-position-x: unit(@background-init-x * 3, px);
+        }
+        &.slideshare {
+          background-position-x: unit(@background-init-x * 4, px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+#videos{
+    section{
+        padding: 4vw 0;
+        .video{
+            background: @color-content;
+            color: @color-main;
+            height: 100%;
+            .frame-container{
+                position: relative;
+                text-align: center;
+                &.not-loaded{
+                    &:after {
+                        content: "";
+                        width: 42px;
+                        height: 30px;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        background: url(/images/play.png) no-repeat;
+                        background-position-y: -30px;
+                        cursor: pointer;
+                    }
+                    &:hover{
+                        &:after {
+                            background-position-y: 0;
+                        }
+                    }
+                }
+
+                img {
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                    min-height: 250px;
+                    @media @tablet {
+                        max-width: 100%;
+                    }
+                }
+                iframe{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    min-height: 250px;
+                    @media @tablet {
+                        max-width: 100%;
+                    }
+                }
+            }
+            footer {
+                padding: 10px 0;
+            }
+        }
+    }
+}

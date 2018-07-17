@@ -1,0 +1,111 @@
+#workshops {
+    section {
+        padding: 40px 0;
+        &.overview {
+            .group {
+                padding-bottom: 50px;
+                h2 {
+                    color: @color-main;
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+#workshop {
+    section {
+        &.detail {
+            padding: 40px 0;
+            text-align: center;
+            @media @desktop {
+                text-align: left;
+            }
+            .content {
+                color: @color-main;
+                h1 {
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+                .speaker {
+                    margin: 20px 0;
+                    background: @color-content;
+                    color: #fff;
+                    article {
+                        padding: 25px;
+                        color: @color-main;
+                    }
+                }
+                article {
+                    padding-bottom: 40px;
+                    h3 {
+                        color: @color-content;
+                        font-size: 17px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .info {
+                padding: 30px 20px;
+                background: @color-main;
+                color: #fff;
+                font-size: 16px;
+                .row>div {
+                    padding-bottom: 15px;
+                }
+                h2 {
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+                hr {
+                    margin: 25px 0;
+                    border-bottom-color: @color-content;
+                }
+                h5 {
+                    color: @color-content;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+            .hackathon-speakers{
+                padding-top: 20px;
+                h2{
+                    color: @color-content;
+                }
+                .speaker{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    .price {
+        font-weight: 200;
+        font-size: 80px;
+        color: @color-content;
+        margin-bottom: 15px;
+        span {
+            font-size: 18px;
+            @media @desktop {
+                font-size: 22px;
+            }
+            color: @color-second;
+            font-weight: bold;
+        }
+    }
+    .button {
+        display: block;
+        min-width: 100%;
+        @media @desktop {
+            min-width: auto;
+        }
+        padding: 10px 40px;
+    }
+}

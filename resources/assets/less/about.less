@@ -1,0 +1,62 @@
+#about {
+    section {
+        padding: 40px;
+        &.headerimage {
+            background: url('/images/headers/header_about.png') no-repeat;
+            background-size: cover;
+        }
+        &.banner {
+            text-align: center;
+            background: @color-content;
+            color: white;
+            font-size: 30px;
+            font-weight: 300;
+            &.dark {
+                background: @color-main;
+                color: @color-content;
+            }
+            .content {
+                @media @large-desktop {
+                    width: 800px;
+                    margin: auto;
+                }
+            }
+        }
+        &.reasons {
+            text-align: center;
+            color: @color-content;
+            .items {
+                .item {
+                    padding: 15px 0;
+                    footer {
+                        margin: auto;
+                        max-width: 300px;
+                        padding-top: 15px;
+                    }
+                }
+            }
+            @media @desktop {
+                .items {
+                    margin-top: 30px;
+                    .item {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        &.venue {
+            text-align: center;
+            color: @color-content;
+            a {
+                img {
+                    filter: grayscale(100%);
+                }
+                &:hover {
+                    img {
+                        filter: none;
+                    }
+                }
+            }
+        }
+    }
+}

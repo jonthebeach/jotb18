@@ -1,0 +1,34 @@
+.tabs {
+    ul {
+      position: fixed;
+      z-index: 1;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      @media @desktop{
+        position: relative;
+      }
+      li {
+        list-style: none;
+        .tab {
+          display: block;
+          background: @color-main;
+          color: white;
+          text-align: center;
+          padding: 15px 0;
+          font-weight: 600;
+          font-size: 18px;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        &:hover,
+        &.ui-state-active {
+          .tab {
+            background: @color-content;
+            color: @color-main;
+          }
+        }
+      }
+    }
+  }

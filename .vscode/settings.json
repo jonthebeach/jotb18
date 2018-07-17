@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "phpcs.standard": "PSR2",
+  "php.validate.run": "onSave",
+  "vscode-php-cs-fixer.rules": "@PSR2",
+  "php.validate.executablePath": "E:/xampp5/php/php.exe",
+  "php.validate.enable": false,
+  "files.associations": {
+    "*.blade.php": "php"
+  },
+  "html.format.enable": false,
+  "html.format.endWithNewline": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.wrapAttributes": "force",
+}

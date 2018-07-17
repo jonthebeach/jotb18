@@ -1,0 +1,38 @@
+.map {
+    background: @color-map;
+    padding: 0 !important;
+    position: relative;
+    .address {
+        height: 0;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        a {
+            color: white;
+        }
+        p {
+            margin: 0;
+            display: inline;
+        }
+        .date {
+            padding-top: 15px;
+        }
+        @media @desktop {
+            font-size: 18px;
+        }
+        @media @large-desktop {
+            font-size: 20px;
+        }
+    }
+    #map {
+        height: 350px;
+        @media @desktop {
+            height: 25vw;
+        }
+        opacity: 0.2;
+    }
+}

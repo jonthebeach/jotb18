@@ -1,0 +1,33 @@
+#e-404 {
+    padding: 4vw 0;
+    text-align: center;
+    color: @color-main;
+    font-size: 17px;
+    .row {
+        align-content: center;
+        flex-direction: column-reverse;
+        @media @phone {
+            flex-direction: row;
+        }
+    }
+    h1 {
+        font-size: 100px;
+        @media @phone {
+            font-size: 10vw;
+        }
+        font-weight: 200;
+        color: @color-content;
+        letter-spacing: 10px;
+    }
+    ul {
+        padding: 20px 0;
+        li {
+            list-style: none;
+            a {
+                text-transform: uppercase;
+                font-size: 17px;
+                color: @color-content;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "bootstrap-sass": "^3.3.7",
+    "ckeditor": "^4.8.0",
+    "cross-env": "^5.0.1",
+    "laravel-mix": "^2.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "lodash": "^4.17.4",
+    "vue": "^2.1.10"
+  },
+  "dependencies": {
+    "fancybox": "3.0.0",
+    "google-maps": "3.2.1",
+    "jquery": "3.2.1",
+    "jquery-fancybox": "3.1.0",
+    "jquery-ui": "1.12.1",
+    "jquery-validation": "1.17.0",
+    "lazyload": "2.0.0-beta.2"
+  }
+}
