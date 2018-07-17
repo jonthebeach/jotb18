@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 /**
- * @todo Unit tests. The have not been developed due client requirements
+ * @todo Unit tests. They have not been developed due client requirements
  */
 class ExampleTest extends TestCase
 {
