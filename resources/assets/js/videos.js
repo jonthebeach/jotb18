@@ -1,7 +1,6 @@
 const $ = require("jquery");
 require('jquery-ui/ui/widgets/tabs');
 require("fancybox")($);
-const LazyLoad = require('lazyload');
 
 module.exports = $(window).on("load", function () {
     function addImgClickListener(elements) {

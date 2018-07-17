@@ -27,6 +27,5 @@
     "jquery-fancybox": "3.1.0",
     "jquery-ui": "1.12.1",
     "jquery-validation": "1.17.0",
-    "lazyload": "2.0.0-beta.2"
   }
 }
