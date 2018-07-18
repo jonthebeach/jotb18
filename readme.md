@@ -3,7 +3,14 @@
 ### About
 This is the code for the J on the Beach 2018 event website.
 
+This project is built with [Laravel PHP framework](https://github.com/laravel/laravel) and [Bootstrap](https://getbootstrap.com/docs/3.3/).
+
 ### Live site https://jonthebeach.com
+
+## Features
+- Easy to setup
+- Simple and responsive design
+- Admin panel to add speakers, talks, schedule, workshops, sponsors, etc. 
 
 ## Local development
 Prerequisites:
@@ -27,8 +34,8 @@ Steps:
 
 ### Contributors
 * Design: [Ángela Dini](https://www.linkedin.com/in/angeladini/)
-* Full stack web developer and Devops: [Iván Benavides](https://github.com/ivanbenavidesmatillas)
-* Chief Blagger: [Luis Sánchez](https://github.com/lsybarguen)
+* Web development and DevOps: [Iván Benavides](https://github.com/ivanbenavidesmatillas)
+* Dictatorship, idea and whipping: [Luis Sánchez](https://github.com/lsybarguen)
 
 ### License
-Project is published under the [MIT license](https://opensource.org/licenses/MIT).
+Project is published under the [MIT license](https://opensource.org/licenses/MIT).Feel free to clone and modify repo as you want, but don't forget to add reference to authors. 
