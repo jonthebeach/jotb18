@@ -3,7 +3,7 @@
 ### About
 This is the code for the J on the Beach 2018 event website.
 
-This project is built with [Laravel PHP framework](https://github.com/laravel/laravel) and [Bootstrap](https://getbootstrap.com/docs/3.3/).
+This project is built with [Laravel PHP framework](https://github.com/laravel/laravel). For this website we have also used [Bootstrap](https://getbootstrap.com/docs/3.3/) for CSS but you can use any other CSS library.
 
 ### Live site https://jonthebeach.com
 
