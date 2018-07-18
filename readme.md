@@ -31,4 +31,4 @@ Steps:
 * Chief Blagger: [Luis Sánchez](https://github.com/lsybarguen)
 
 ### License
-Project is published under the [MIT license](https://github.com/gdg-x/zeppelin/blob/master/LICENSE.txt).
+Project is published under the [MIT license](https://opensource.org/licenses/MIT).
