@@ -38,4 +38,4 @@ Steps:
 * Dictatorship, idea and whipping: [Luis Sánchez](https://github.com/lsybarguen)
 
 ### License
-Project is published under the [MIT license](https://opensource.org/licenses/MIT).Feel free to clone and modify repo as you want, but don't forget to add reference to authors. 
+Project is published under the [MIT license](https://github.com/jonthebeach/jotb18/blob/master/LICENSE). Feel free to clone and modify the repo as you want, but don't forget to add reference to authors. 
