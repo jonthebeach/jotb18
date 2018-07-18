@@ -27,7 +27,7 @@ Steps:
 
 ### Contributors
 * Design: [Ángela Dini](https://www.linkedin.com/in/angeladini/)
-* Full stack web developer and Devops: [Iván Benavides](https://www.linkedin.com/in/iv%C3%A1n-pedro-benavides-matillas-16141384/)
+* Full stack web developer and Devops: [Iván Benavides](https://github.com/ivanbenavidesmatillas)
 * Chief Blagger: [Luis Sánchez](https://github.com/lsybarguen)
 
 ### License
