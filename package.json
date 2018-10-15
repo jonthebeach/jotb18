@@ -14,10 +14,10 @@
     "bootstrap-sass": "^3.3.7",
     "ckeditor": "^4.8.0",
     "cross-env": "^5.0.1",
-    "laravel-mix": "^2.0",
+    "laravel-mix": "^2.1.14",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.11",
     "vue": "^2.1.10"
   },
   "dependencies": {
@@ -26,6 +26,6 @@
     "jquery": "3.2.1",
     "jquery-fancybox": "3.1.0",
     "jquery-ui": "1.12.1",
-    "jquery-validation": "1.17.0",
+    "jquery-validation": "1.17.0"
   }
 }
