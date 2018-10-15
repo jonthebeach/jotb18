@@ -10,7 +10,8 @@ This project is built with [Laravel PHP framework](https://github.com/laravel/la
 ## Features
 - Easy to setup
 - Simple and responsive design
-- Admin panel to add speakers, talks, schedule, workshops, sponsors, etc. 
+- Admin panel to add speakers, talks, schedule, workshops, sponsors, etc.
+- Dynamic schedule to show the different talks in each hall during the event.  
 
 ## Local development
 Prerequisites:
